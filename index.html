@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسة الديار العالمية</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- الهيدر -->
+<header>
+    <div class="header-container">
+        <!-- الشعار -->
+        <div class="logo">
+            <img src="nn.png" alt="شعار مؤسسة خيام ومظلات" class="logo-img">
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com/YourPage" target="_blank" title="تابعنا على فيسبوك"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/aldiyarglobal/" target="_blank" title="تابعنا على إنستغرام"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+9660553719009" target="_blank" title="تواصل معنا عبر واتساب"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:+9660553719009" class="phone-icon" title="اتصل بنا"><i class="fas fa-phone-alt"></i></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="ak.html">الرئيسية</a></li>
+                <li><a href="tents.html">المظلات</a></li>
+                <li><a href="royal-tents.html">الخيم الملكية</a></li>
+                <li><a href="shields.html">سواتر</a></li>
+                <li><a href="tent-homes.html">بيت شعر </a></li>
+                <li><a href="pergolas.html">برجولات</a></li>
+                <li><a href="garden-design.html">تنسيق حدائق</a></li>
+                <li><a href="other-services.html">خدمات أخرى</a></li>
+            </ul>
+        </nav>
+        <!-- أيقونة الهامبرغر -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+<!-- المحتوى الرئيسي -->
+<main>
+    
+<!-- حاوية العرض -->
+<!-- حاوية العرض -->
+<div class="slideshow-container">
+    <!-- الشريحة الأولى -->
+    <div class="slides">
+        <img src="10 (1).jpg" alt="صورة 1">
+        <div class="text">مرحباً بكم في مؤسسة الديار العالمية</div>
+    </div>
+    <!-- الشريحة الثانية -->
+    <div class="slides">
+        <img src="10 (2).jpg" alt="صورة 2">
+        <div class="text">أفضل تصاميم الخيام والمظلات</div>
+    </div>
+    <!-- الشريحة الثالثة -->
+    <div class="slides">
+        <img src="10 (3).jpg" alt="صورة 3">
+        <div class="text">جودة وخبرة في كل مشروع</div>
+    </div>
+</div>
+
+<!-- النقاط للتنقل بين الصور -->
+<div class="dots">
+    <span onclick="currentSlide(1)"></span>
+    <span onclick="currentSlide(2)"></span>
+    <span onclick="currentSlide(3)"></span>
+</div>
+
+
+
+<!-- جافاسكربت لتفعيل العرض -->
+<script>let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+        let slides = document.getElementsByClassName("slides");
+        let dots = document.getElementsByClassName("dots")[0].children;
+    
+        // إخفاء جميع الصور
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+    
+        // إزالة حالة التفعيل من النقاط
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].classList.remove("active");
+        }
+    
+        // عرض الشريحة التالية وتفعيل النقطة
+        slideIndex++;
+        if (slideIndex > slides.length) slideIndex = 1;
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add("active");
+    
+        // تغيير الشريحة كل 5 ثوانٍ
+        setTimeout(showSlides, 5000);
+    }
+    
+    function currentSlide(n) {
+        slideIndex = n - 1;
+        showSlides();
+    }
+    </script>
+    <h2>مرحبا بكم في مؤسسة الديار العالمية</h2>
+    <p class="intro-paragraph">
+        <strong>مؤسسة الديار العالمية</strong> هي واحدة من المؤسسات الرائدة والمتخصصة في المملكة العربية السعودية في تصميم وتنفيذ أفضل أنواع الخيام، المظلات، البرجولات، والسواتر. نحن نلتزم بتقديم أعلى معايير الجودة والابتكار لتلبية احتياجات عملائنا. بخبرة تمتد لسنوات، نجمع بين التصاميم الحديثة والجودة العالية لنضمن رضا عملائنا وتلبية تطلعاتهم. سواء كنت تبحث عن خيام ملكية، مظلات عصرية، أو حلول مميزة لتنسيق الحدائق، نحن هنا لنحول أفكارك إلى واقع بخدمات استثنائية ومميزة.
+    </p>
+    <p class="intro-paragraph">
+        <strong>هدفنا</strong>
+     هو تزويد عملائنا بتجربة فريدة من خلال تقديم حلول مصممة خصيصاً لتناسب احتياجاتهم. نسعى جاهدين لتحقيق التميز في كل ما نقدمه، من التصاميم الأنيقة إلى التنفيذ المثالي، مع التركيز على تقديم خدمات عالية الجودة بأسعار تنافسية.
+    </p>
+    <p class="intro-paragraph">
+        <strong>من مميزات المؤسسة العالمية </strong>
+      تقديم تصاميم واستشارات هندسية متنوعة وحديثة ويتم الأشراف علئ المؤسسة وعملها كبار المهندسسين
+        
+    </p>
+    
+         <!-- قسم الخدمات -->
+     <section id="services" class="services">
+        <div class="container">
+            <h2>خدماتنا</h2>
+            <div class="services-grid">
+                <!-- خدمة 1 -->
+                <div class="service">
+                    <a href="tents.html">
+                        <img src="data:image/jpeg;base64,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" alt="مظلات">
+                        <div class="service-info">
+                            <h3>مظلات</h3>
+                            <p>تصاميم مبتكرة لحماية سيارتك ومساحاتك الخارجية.</p>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- خدمة 2 -->
+                <div class="service">
+                    <a href="royal-tents.html">
+                        <img src="https://th.bing.com/th/id/OIP.qZNBbUCF91WTFoj-g0VyWwHaG-?w=198&h=186&c=7&r=0&o=5&pid=1.7" alt="الخيام">
+                        <div class="service-info">
+                            <h3>خيام متنوعة</h3>
+                            <p>خيام ملكية وخيام رمضانية بجودة عالية.</p>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- خدمة 3 -->
+                <div class="service">
+                    <a href="shields.html">
+                        <img src="https://th.bing.com/th/id/OIP.vdtpEzAK0bflR5_1hOPnQwHaHX?w=274&h=205&c=7&r=0&o=5&pid=1.7" alt="سواتر">
+                        <div class="service-info">
+                            <h3>سواتر</h3>
+                            <p>أنظمة حماية وأمان تناسب جميع الاحتياجات.</p>
+                        </div>
+                    </a>
+                </div>
+                
+            <!-- خدمة بيت الشعر -->
+            <div class="service">
+                <a href="tent-homes.html">
+                    <img src="https://th.bing.com/th/id/OIP.ffJHRC5XYqqorVTVRWo0sQHaFj?w=264&h=198&c=7&r=0&o=5&pid=1.7" alt="بيت شعر">
+                    <div class="service-info">
+                        <h3>بيت شعر</h3>
+                        <p>تصاميم تقليدية وأنيقة لبيوت الشعر الفاخرة.</p>
+                    </div>
+                </a>
+            </div>
+             <!-- خدمة البرجولات -->
+             <div class="service">
+                <a href="pergolas.html">
+                    <img src="https://th.bing.com/th/id/OIP.N-RyTC4ebFY1PtF51QyoQQHaHa?w=269&h=202&c=7&r=0&o=5&pid=1.7" alt="برجولات">
+                    <div class="service-info">
+                        <h3>برجولات</h3>
+                        <p>برجولات عصرية تضيف لمسة جمالية لأماكنك الخارجية.</p>
+                    </div>
+                </a>
+            </div>
+             <!-- خدمة تنسيق الحدائق -->
+             <div class="service">
+                <a href="garden-design.html">
+                    <img src="https://th.bing.com/th/id/OIP.QRMOnHHdInS_c6TYtM8OAwHaFF?w=292&h=201&c=7&r=0&o=5&pid=1.7" alt="تنسيق حدائق">
+                    <div class="service-info">
+                        <h3>تنسيق حدائق</h3>
+                        <p>خدمات تنسيق حدائق متكاملة لتلبية جميع احتياجاتك.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- خدمات أخرى -->
+            <div class="service">
+                <a href="other-services.html">
+                    <img src="https://via.placeholder.com/300x200" alt="خدمات أخرى">
+                    <div class="service-info">
+                        <h3>خدمات أخرى</h3>
+                        <p>خدمات متنوعة لتلبية جميع متطلباتك الإضافية.</p>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div>
+    </section>
+               
+</main>
+
+<!-- الفوتر -->
+<footer>
+    <p>&copy; 2024 مؤسسة الديار العالمية - جميع الحقوق محفوظة.</p>
+</footer>
+
+<!-- جافا سكربت لتفعيل قائمة الهامبرغر -->
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector(".nav-links");
+        menu.classList.toggle("active");
+    }
+</script>
+<!-- الفوتر -->
+<footer>
+    <div class="footer-container">
+        <div class="social-icons">
+            <a href="https://facebook.com/YourPage" target="_blank" title="تابعنا على فيسبوك"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/YourProfile" target="_blank" title="تابعنا على تويتر"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/aldiyarglobal/" target="_blank" title="تابعنا على إنستغرام"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/YourProfile" target="_blank" title="تابعنا على لينكد إن"><i class="fab fa-linkedin"></i></a>
+            <a href="https://wa.me/+9660553719009" target="_blank" title="تواصل معنا عبر واتساب"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:+9660553719009" class="phone-icon" title="اتصل بنا"><i class="fas fa-phone-alt"></i></a>
+            <a href="mailto:yourname@example.com" class="email-icon" title="راسلنا عبر البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+        </div>
+      
+</footer>
+</body>
+</html>
